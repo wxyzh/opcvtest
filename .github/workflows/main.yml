@@ -6,8 +6,8 @@ jobs:
     runs-on: ubuntu-18.04
     name: Test the action
     steps:
-    - uses: actions/checkout@v1
-    - uses: Dovyski/setup-opencv-action@v2
+    - uses: actions/checkout@v2
+    - uses: Dovyski/setup-opencv-action@v1
     - name: Install OpenCV
       uses: ./ # Uses an action in the root directory
       with:
