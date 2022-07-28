@@ -10,9 +10,12 @@ jobs:
     - uses: Dovyski/setup-opencv-action@v1
       with:
         opencv-version: '3.4.16'
+        CMAKE_INSTALL_PREFIX: /opt/opencv
+        WITH_V4L: on
+        WITH_OPENGL: on
     - name: Upload Build directory
       uses: actions/upload-artifact@main
       with:
-        name: Updat File
+        name: Update File
         path: /home/runner/work/opcvtest/opcvtest/opencv/build
         
