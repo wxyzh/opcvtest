@@ -1,5 +1,7 @@
 name: Test
-on: push
+on: 
+  workflow_dispatch:
+
 
 jobs:
   test:
@@ -17,5 +19,5 @@ jobs:
       uses: actions/upload-artifact@main
       with:
         name: Update File
-        path: /home/runner/work/opcvtest/opcvtest/opencv/build
+        path: /opt/opencv
         
